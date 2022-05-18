@@ -1,10 +1,15 @@
 @component('mail::message')
-# Le han mandado un mensaje
+# {{ $mensaje-> name}} Le han mandado un mensaje
+
+##Email: {{ $mensaje-> email }}
+
+##Phone: {{ $mensaje-> message }}
 
 The body of your message.
 
 
 
-Thanks,<br>
-{{ config('app.name') }}
+Gracias<br>
+
+
 @endcomponent

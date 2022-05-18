@@ -1,11 +1,11 @@
 <?php
 
 namespace App\Http\Controllers;
+use Illuminate\Support\Facades\Validator;
 use App\Models\Mensaje;
 use Illuminate\Http\Request;
 use App\Mail\MensajeContacto;
 use Illuminate\Support\Facades\Mail;
-use Illuminate\Support\Facades\Validator;
 
 class PageController extends Controller
 {
@@ -27,7 +27,7 @@ class PageController extends Controller
             ],422);
         };
         
-          //dd(request()->all()); //verifica los datos
+          //creo los datos
 
         $mensaje = Mensaje::create([
             'name' =>request()->name,
