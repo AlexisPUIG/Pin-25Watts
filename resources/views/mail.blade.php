@@ -1,5 +1,5 @@
 @component('mail::message')
-# {{ $mensaje-> name}} Le han mandado un mensaje
+# {{ $mensaje-> name}} Le ha mandado un mensaje
 
 ##Email: {{ $mensaje-> email }}
 
