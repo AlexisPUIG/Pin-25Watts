@@ -40,7 +40,7 @@ class PageController extends Controller
         ]);
           //dd($mensaje);
           //envio de correo
-        mail::to('alexispuig_10@hotmail.com.ar')->send(new MensajeContacto($mensaje));
+        Mail::to('alexispuig_10@hotmail.com.ar')->send(new MensajeContacto($mensaje));
           //respuesta json
         return response([
             "meta" => [
