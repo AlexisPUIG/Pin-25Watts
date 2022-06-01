@@ -31,6 +31,6 @@ class MensajeContacto extends Mailable
      */
     public function build()
     {
-        return $this->markdown('mail');
+        return $this->markdown('Mail');
     }
 }
